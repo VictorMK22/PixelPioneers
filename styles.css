@@ -144,6 +144,10 @@
   .project {
     margin-bottom: 40px;
   }
+
+  .destined {
+    float: right;
+  }
   
   .project img {
     max-width: 100%;
