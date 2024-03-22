@@ -1,7 +1,5 @@
 /* Reset Styles */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
   
@@ -10,8 +8,10 @@
     font-family: Arial, sans-serif;
     background-color: dodgerblue;
     width: 100%;
+    margin: 0;
     /* background-image: url(images/home.webp);
     background-repeat: no-repeat; */
+    /* border: 2px dashed yellowgreen; */
     
   }
   
@@ -59,7 +59,19 @@
   /* nav ul li a:visited {
     color: chartreuse;
   } */
+
+  h1 {
+    color: chartreuse;
+    text-align: center;
+  }
+
+  h2 {
+    color: purple;
+  }
   
+  main p {
+    color: black;
+  }
   .cta-button {
     background-color: #ff9900;
     color: #fff;
@@ -242,7 +254,92 @@
   #ditech {
     width: 700px;
     height: auto;
-    margin-left: 40px;
+  }
+
+  .terms {
+    padding: 20px;
+  }
+
+  .terms h2{
+    padding-bottom: 10px; 
+  }
+
+  .list {
+    list-style-type: none;
+    padding-top: 10px;
+  }
+
+  .list li {
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .contact-h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .contact-info {
+    padding-top: 10px;
+  }
+
+  .contact-details h3 {
+    padding-bottom: 20px;
+  }
+
+  .contact-details p {
+    padding-bottom: 20px;
+  }
+
+  .cList {
+    list-style-type: none;
+  }
+
+  .cList li {
+    padding: 20px;
+  }
+
+  .contact-form {
+    display:block;
+    text-align: center;
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 20px;
+  }
+
+  .contact-form h3 {
+    padding-bottom: 10px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: row;
+    gap: 30px 10%;
+  }
+
+  .project div {
+    width: 45%;
+    padding-top: 20px;
+    padding-left: 10px;
+    /* border: 2px solid red; */
+
+  }
+
+  .TermsOfService:hover {
+    color: purple;
+  }
+
+  .PrivacyPolicy:hover {
+    color: purple;
+  }
+
+  #presentation {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  #presentation:hover{
+    color: greenyellow;
   }
 
   @media screen and (max-width: 600px) {
@@ -273,31 +370,64 @@
       text-align: center;
     }
 
-    .about {
-      display: block;
+    .heading {
+      padding-top: 20px;
     }
 
     .services{
       display: flex;
+      flex-direction: column;
       flex-wrap: nowrap;
+    }
+
+    .service {
+      padding: 20px;
     }
 
     .testimonials {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
+    }
+
+    .testimonial {
+      padding: 20px;
     }
 
 
 
     #ditech {
-      width: 300px;
-      height: 200px;
-      border-radius: 50%;
-      margin: 0;
+      width: 400px;
+      padding-left: 0;
+      border: 2px dashed greenyellow;
     }
 
     footer {
       padding-top: 10px;
     }
+
+    .about {
+      border: 2px dotted purple;
+      display: block;
+      justify-content: center;
+      margin: 0;
+    }
+    
+    .about div {
+      padding: 20px 0;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid red; */
+    }
+
+    .project div {
+      width: 100%;
+    }
+
   }
+
+  
   
