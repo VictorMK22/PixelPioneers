@@ -1,100 +1,433 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - PixelPioneers Collective</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Header Section -->
-  <header id="navbar">
-    <div><img id="logo" src="/images/Logo.png" alt="Logo">
-    </div>
-
-    <div id="bar" class="flex-item"><i class="fa fa-bars" aria-hidden="false"></i></div>
-
-    <div id="nav_bar" class="flex-item">
-
-      <nav>
-
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-  </div>
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: dodgerblue;
+    width: 100%;
+    margin: 0;
+    /* background-image: url(images/home.webp);
+    background-repeat: no-repeat; */
+    /* border: 2px dashed yellowgreen; */
     
-  </header>
-
-  <!-- Main Section -->
-  <main>
-    <!-- Services Section -->
-    <section>
-      <h1 class="heading">Services</h1>
-      <div id="services" class="services">
-        <div class="service">
-          <h3>UI/UX Design</h3>
-          <p>Our UI/UX design services focus on creating visually appealing interfaces that offer seamless user experiences. We combine aesthetics with functionality to ensure your digital presence stands out.</p>
-        </div>
+  }
   
-        <div class="service">
-          <h3>Web Development</h3>
-          <p>Our web development services cover a wide range of technologies and platforms, ensuring your website is not only visually appealing but also robust, secure, and optimized for performance.</p>
-        </div>
+  /* Header Styles */
+  #navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    height: 90px;
+  }
+
+  /* div img {
+    border: 2px solid yellow;
+  } */
+
   
-        <div class="service">
-          <h3>E-commerce Solutions</h3>
-          <p>Our e-commerce solutions are tailored to meet the specific needs of your business, providing a seamless and secure online shopping experience for your customers while maximizing conversion rates and revenue.</p>
-        </div>
-        <!-- Add more services here -->
-      </div>
-      
-      
-    </section><hr>
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* text-align: end; */
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 24px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    
+  }
 
-    <section>
-      <h1 class="heading">Testimonials</h1>
-      <div class="testimonials">
-        <div class="testimonial">
-          <blockquote>"PixelPioneers Collective transformed our website into a visually stunning masterpiece. Their attention to detail and user-centric approach truly sets them apart."</blockquote>
-          <p class="testimonial-author">- John Doe, CEO of ABC Company</p>
-        </div>
-        <div class="testimonial">
-          <blockquote>"Working with PixelPioneers was a game-changer for our business. Their expertise and creativity elevated our brand and significantly improved our online presence."</blockquote>
-          <p class="testimonial-author">- Jane Smith, Marketing Director at XYZ Corporation</p>
-        </div>
-        <div class="testimonial">
-          <blockquote>"PixelPioneers Collective's web development team delivered exceptional results, exceeding our expectations. Their expertise and professionalism are unmatched."</blockquote>
-          <p class="testimonial-author">- David Brown, CTO of XYZ Tech</p>
-        </div>
-        <div class="testimonial">
-          <blockquote>"The website PixelPioneers developed for us is not only beautiful but also highly functional. It has significantly improved our online presence and user engagement."</blockquote>
-          <p class="testimonial-author">- Emily Johnson, Marketing Manager at ABC Startup</p>
-        </div>
-        <div class="testimonial">
-          <blockquote>"PixelPioneers Collective helped us launch our e-commerce store quickly and efficiently. Their expertise in e-commerce solutions was invaluable, and we've seen a significant increase in sales since the launch."</blockquote>
-          <p class="testimonial-author">- Sarah Jones, Founder of XYZ Store</p>
-        </div>
-        <div class="testimonial">
-          <blockquote>"We're thrilled with the e-commerce platform PixelPioneers developed for us. It's user-friendly, visually appealing, and has all the features we need to manage our online business effectively."</blockquote>
-          <p class="testimonial-author">- Mark Smith, CEO of ABC Retail</p>
-        </div>
-      </div>
-    </section>
-  </main>
+  nav ul li a:hover {
+    color: purple;
+    
+  }
 
-  <!-- Footer Section -->
-  <footer>
-    <div class="footer-links">
-      <a class="TermsOfService" href="/TermsOfService.html">Terms of Service</a>
-      <a class="PrivacyPolicy" href="/PrivacyPolicy.html">Privacy Policy</a>
-    </div>
-    <div class="social-icons">
-      <!-- Social Media Icons Go Here -->
-    </div>
-    <p>&copy; 2024 PixelPioneers Collective. All Rights Reserved.</p>
-  </footer>
-</body>
-</html>
+  /* nav ul li a:visited {
+    color: chartreuse;
+  } */
+
+  h1 {
+    color: chartreuse;
+    text-align: center;
+  }
+
+  h2 {
+    color: purple;
+  }
+  
+  main p {
+    color: black;
+  }
+  .cta-button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffcc00;
+  }
+  
+  /* Main Section Styles */
+  main {
+    padding: 20px;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-cta {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .hero-cta:hover {
+    background-color: #ffcc00;
+  }
+
+  section h1 {
+    color: purple;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .services{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5% 5%;
+  }
+  
+  .service {
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    margin-bottom: 10px;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5% 5%;
+  }
+  
+  .project {
+    margin-bottom: 40px;
+  }
+  
+  .project img {
+    max-width: 100%;
+  }
+  
+  .project h3 {
+    margin-bottom: 10px;
+  }
+  
+  .article {
+    margin-bottom: 40px;
+  }
+  
+  .article h3 {
+    margin-bottom: 10px;
+  }
+
+  .fa fa-bars {
+    color: #fff;
+  }
+  
+  /* .nav_bar {
+    display: flex;
+    align-items: end;
+  } */
+  
+  /* Contact Form Styles */
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  form button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #ffcc00;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  #logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    
+  }
+
+  .about {
+    display: inline-grid;
+    grid-template-columns: 40% 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+    row-gap: 10%;
+    column-gap: 10%;
+    width: 100%;
+    margin-bottom: 10%;
+    /* border: 2px solid yellow; */
+  }
+
+  /* .item-1 {
+    border: 2px solid blue;
+  }
+
+  .item-2 {
+    border: 2px solid blue;
+  }
+
+  .item-3 {
+    border: 2px solid blue;
+  }
+
+  .item-4 {
+    border: 2px solid blue;
+    padding-left: 20px;
+  } */
+
+  #ditech {
+    width: 700px;
+    height: auto;
+  }
+
+  .terms {
+    padding: 20px;
+  }
+
+  .terms h2{
+    padding-bottom: 10px; 
+  }
+
+  .list {
+    list-style-type: none;
+    padding-top: 10px;
+  }
+
+  .list li {
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .contact-h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .contact-info {
+    padding-top: 10px;
+  }
+
+  .contact-details h3 {
+    padding-bottom: 20px;
+  }
+
+  .contact-details p {
+    padding-bottom: 20px;
+  }
+
+  .cList {
+    list-style-type: none;
+  }
+
+  .cList li {
+    padding: 20px;
+  }
+
+  .contact-form {
+    display:block;
+    text-align: center;
+    width: 80%;
+    padding-left: 20%;
+    padding-top: 20px;
+  }
+
+  .contact-form h3 {
+    padding-bottom: 10px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: row;
+    gap: 30px 10%;
+  }
+
+  .project div {
+    width: 45%;
+    padding-top: 20px;
+    padding-left: 10px;
+    /* border: 2px solid red; */
+
+  }
+
+  .TermsOfService:hover {
+    color: purple;
+  }
+
+  .PrivacyPolicy:hover {
+    color: purple;
+  }
+
+  #presentation {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  #presentation:hover{
+    color: greenyellow;
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+      font-family: Arial, sans-serif;
+      background-color: dodgerblue;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    #navbar {
+      text-align: center;
+      display: block;
+      height: auto;
+    }
+    
+    nav ul {
+      list-style-type: none;
+    }
+    
+    nav ul li {
+      display: block;
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .heading {
+      padding-top: 20px;
+    }
+
+    .services{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    .service {
+      padding: 20px;
+    }
+
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    .testimonial {
+      padding: 20px;
+    }
+
+
+
+    #ditech {
+      width: 400px;
+      padding-left: 0;
+      border: 2px dashed greenyellow;
+    }
+
+    footer {
+      padding-top: 10px;
+    }
+
+    .about {
+      border: 2px dotted purple;
+      display: block;
+      justify-content: center;
+      margin: 0;
+    }
+    
+    .about div {
+      padding: 20px 0;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid red; */
+    }
+
+    .project div {
+      width: 100%;
+    }
+
+  }
+
+  
+  
