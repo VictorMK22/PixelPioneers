@@ -32,10 +32,11 @@
   <!-- Main Section -->
   <main>
     <!-- Contact Section -->
+    <h2 class="contact-h2">Contact Us</h2>
     <section id="contact" class="contact">
-      <h2 class="contact-h2">Contact Us</h2>
+    <div class="contact-details">
       <div class="contact-info">
-        <div class="contact-details">
+        <div class="contact-detail">
           <h3>Reach Out to Us</h3>
           <p>If you have any questions or inquiries, feel free to contact us via phone or email. We're here to help!</p>
           <ul class="cList">
@@ -44,15 +45,20 @@
           </ul>
         </div>
       </div>
+    </div>
+
       <div class="contact-form">
         <h3>Send Us a Message</h3>
-        <form action="#" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        <div>
+          <form action="#" method="POST">
+            <input class="input" type="text" name="name" placeholder="Your Name" required>
+            <input class="input" type="email" name="email" placeholder="Your Email" required>
+            <textarea class="textarea" name="message" placeholder="Your Message" required></textarea>
+            <button id="btn" type="submit">Send Message</button>
+          </form>
+        </div>
       </div>
+    
     </section>
   </main>
 
