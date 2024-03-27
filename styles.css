@@ -68,6 +68,10 @@
   h2 {
     color: purple;
   }
+
+  main {
+    margin-bottom: 50px;
+  }
   
   main p {
     color: black;
@@ -395,9 +399,11 @@
     padding-bottom: 10px;
   }
 
-  .input {
-    background-color: white;
+  .input,.textarea {
+    background-color: paleturquoise;
   }
+
+
 
   #btn {
     background-color: purple;
@@ -424,15 +430,6 @@
 
   .PrivacyPolicy:hover {
     color: purple;
-  }
-
-  #presentation {
-    font-size: 30px;
-    font-weight: 700;
-  }
-
-  #presentation:hover{
-    color: greenyellow;
   }
 
   @media screen and (max-width: 600px) {
@@ -481,10 +478,12 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      width: 90%;
+      
     }
 
     .testimonial {
-      padding: 20px;
+      margin-top: 20px;
     }
 
 
@@ -522,9 +521,38 @@
 
     .teamMembers {
       display: grid;
-      grid-template-rows: auto;
+      grid-template-columns: auto;
       grid-gap: 2%;
       margin-left: 0px;
+    }
+
+    .teamMember {
+      width: 90%;
+      height: auto;
+      border: 2px solid gray;
+      border-radius: 20px;
+      display: block;
+      justify-content: center;
+      margin-left: 5%;
+    }
+
+    .teamMember figure {
+      display: block;
+      text-align: center;
+      margin-left: 0px;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction:column;
+      width: 90%;
+    }
+
+    .contact-details {
+      border: 2px solid gray;
+      border-radius: 20px;
+      background-color: aqua;
+      margin-bottom: 20px;
     }
 
   }
